@@ -1,5 +1,4 @@
 const fs = require('fs');
-const chalk = require('chalk');
 
 class WebModuleConfigPlugin {
   constructor(options) {
@@ -11,7 +10,7 @@ class WebModuleConfigPlugin {
   validateOptions(options) {
     if (!options || !options.outputPath) {
       const msg = `Please specify an outputPath.`;
-      throw new Error(console.log(chalk.bold.bgRed('Error:'), chalk.bold.red(msg)));
+      throw new Error(msg);
     }
   }
 
@@ -36,9 +35,9 @@ class WebModuleConfigPlugin {
 
         fs.writeFileSync(filePath, JSON.stringify(assetsManifest, null, 4));
 
-        console.log(chalk.green.bold('Manifest generated'));
+        console.log('Manifest generated');
       } catch (error) {
-        console.log(chalk.bold.bgRed('Exception:'), chalk.bold.red(error.message));
+        console.log(error.message);
       }
     });
   }

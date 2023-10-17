@@ -2,7 +2,8 @@
   "name": "webnetq-js",
   "version": "0.0.1",
   "description": "WebPack base module",
-  "main": "index.js",
+  "type": "commonjs",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/yakubins/webnetq-js/issues"
   },
-  "homepage": "https://github.com/yakubins/webnetq-js#readme"
+  "homepage": "https://github.com/yakubins/webnetq-js#readme",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
 }
