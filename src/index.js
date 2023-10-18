@@ -1,3 +1,1 @@
-const WebModuleConfigPlugin = require('./plugins/WebModuleConfigPlugin.js');
-
-module.exports = WebModuleConfigPlugin;
+export { default as WebModuleConfigPlugin } from './plugins/WebModuleConfigPlugin.js';

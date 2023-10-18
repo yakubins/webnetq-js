@@ -1,6 +1,6 @@
-const fs = require('fs');
+import fs from 'fs';
 
-class WebModuleConfigPlugin {
+export default class WebModuleConfigPlugin {
   constructor(options) {
     this.validateOptions(options);
 
@@ -41,6 +41,4 @@ class WebModuleConfigPlugin {
       }
     });
   }
-}
-
-module.exports = WebModuleConfigPlugin;
+};
