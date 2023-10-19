@@ -1,7 +1,9 @@
 import fs from 'fs';
+import chalk from 'chalk';
 
 export default class WebModuleConfigPlugin {
   constructor(options) {
+    log(chalk.blue('Hello') + ' World' + chalk.red('!'));
     this.validateOptions(options);
 
     this.options = options;
