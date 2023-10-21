@@ -1,3 +1,4 @@
+import path from "path";
 import fs from "fs";
 
 const readdirListSync = (base, dir, list) => {
