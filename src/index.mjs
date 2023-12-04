@@ -1,2 +1,2 @@
-export { default as WebModuleConfigPlugin } from './plugins/WebModuleConfigPlugin.mjs';
-export { default as FileSystem } from './FileSystem/index.mjs';
+export { default as FileSystem } from './lib/FileSystem/index.mjs';
+export { default as NQURL } from './lib/NQURL.mjs';
