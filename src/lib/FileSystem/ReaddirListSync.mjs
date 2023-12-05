@@ -1,5 +1,5 @@
-import path from "node:path";
-import fs from "node:fs";
+import path from "path";
+import fs from "fs";
 
 const readdirListSync = (base, dir, list) => {
   list = list || [];
